@@ -1,0 +1,672 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'jaldi';
+}
+nav {
+    background-color: #4A816A;
+    align-items: center;
+    justify-content: space-around;
+}
+nav li a {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'jaldi';
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.logo {
+    width: 15%
+}
+nav ul {
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 47px;
+}
+.menub {
+    background-color:#4A816A;
+    width: 195px;
+    height: 235px;
+    position: fixed;
+    opacity: 0;
+    z-index: -100;
+    top: 114px;
+    right: 384px;
+    transition: 0.7s ease-in-out;
+
+}
+.menub.ouvert {
+    top: 114px;
+    z-index: 998;
+    right: 384px;
+    opacity: 1;
+    transition: 0.7s ease-in-out;
+}
+.menub a {
+    color: white;
+    font-size:  24px;
+    letter-spacing: 0.8px;
+    padding: 20px 35px 18px 35px;
+}
+.menubis {
+    display: flex;
+    justify-content: right;
+}
+.contact-menu , .candidature ,.brochure, .ecole-menu, .nos-campus, .intranet, .c-licence, .c-master, .c-international {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.menuh {
+    background-color:#4A816A;
+    width: 175px;
+    height: 235px;
+    position: fixed;
+    opacity: 0;
+    z-index: 998;
+    top: 114px;
+    right: 201px;
+    transition: 0.7s ease-in-out;
+}
+.menuh.ouvert {
+    top: 114px;
+    z-index: 998;
+    right: 201px;
+    opacity: 1;
+    transition: 0.7s ease-in-out;
+}
+.menuh a {
+    color: white;
+    font-size:  24px;
+    letter-spacing: 0.8px;
+    padding: 12px 35px 12px 35px;
+}
+.menup {
+    background-color:#4A816A;
+    width: 195px;
+    height: 400px;
+    position: fixed;
+    opacity: 0;
+    z-index: 998;
+    top: 114px;
+    right: 0px;
+    transition: 0.7s ease-in-out;
+}
+.menup.ouvert {
+    top: 114px;
+    z-index: 998;
+    right: 0px;
+    opacity: 1;
+    transition: 0.7s ease-in-out;
+}
+.menup a {
+    color: white;
+    font-size:  24px;
+    letter-spacing: 0.8px;
+    padding: 20px 35px 18px 35px;
+}
+.menu-burger, .menu-home, .menu-person {
+    cursor: pointer;
+}
+nav a:hover, nav svg:hover, nav img:hover {
+    opacity: 0.6;
+}
+
+
+/*formation*/
+
+.block-présentation {
+    width: 80%;
+    height: 811px;
+    position: relative;
+    background: linear-gradient(180deg, #DC6F59 50%, #9CC19E 120%);
+    box-shadow: -10px 10px 6px 0px #7B5C55;
+    border-radius:48px 0px 0px 48px; ;
+    display: flex;
+    z-index: 5;
+    margin-top: 30px;
+    
+}
+a .bouton p {
+    text-decoration: none;
+    color: white;
+}
+.forme-section {
+    border-radius: 75.5px 0px 0px 75px;
+    width: 400px;
+    height: 151px;
+    position: absolute;
+    box-shadow: inset 6px 1px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.5s ease-out;
+}
+.forme-evenement {
+    background-color: #DA8672;
+    top: 194px;
+    left: 298px;
+}
+.forme-evenement h3 {
+    opacity: 0;
+    rotate: 270deg;
+    color: white;
+    font-size: 60px;
+    padding-bottom: 100px;
+    margin-top: 190px;
+    transition: 1s ease-out;
+}
+.forme-brochure {
+    background-color: #85B09F;
+    top: 355px;
+    left: 298px;
+}
+.forme-agenda {
+    background-color: #A4BEB6;
+    top: 518px;
+    left: 298px;
+}
+.forme-evenement:hover {
+    height: 707px;
+    left: 110px;
+    z-index: 4;
+}
+.forme-evenement:hover h3 {
+    opacity: 1;
+}
+.forme-brochure:hover {
+    height: 556px;
+    left: 110px;
+    z-index: 4;
+}
+.forme-brochure h3 {
+    opacity: 0;
+    rotate: 270deg;
+    color: white;
+    font-size: 60px;
+    padding-bottom: 100px;
+    margin-top: 89px;
+    transition: 1s ease-out;
+}
+.forme-brochure:hover h3 {
+    opacity: 1;
+}
+.forme-agenda:hover {
+    height: 416px;
+    left: 110px;
+    z-index: 4;
+}
+.forme-agenda h3 {
+    opacity: 0;
+    rotate: 270deg;
+    color: white;
+    font-size: 60px;
+    padding-bottom: 100px;
+    margin-top: 18x;
+    transition: 1s ease-out;
+}
+.forme-agenda:hover h3 {
+    opacity: 1;
+}
+.block-présentation h1 {
+    color: white;
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 48px;
+}
+.block-présentation p {
+    color: white;
+    font-size: 21px;
+}
+.bouton {
+    position: absolute;
+    width: 223px;
+    height: 77px;
+    border-radius: 32px;
+    background: #85B09F;
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 620px;
+    left: 258px;
+}
+.bouton p {
+    margin-bottom: 0;
+    font-size: 26px;
+}
+.block-présentation .row {
+    align-items: center;
+}
+#ecole {
+    display: flex;
+    justify-content: end;
+    padding: 0;
+}
+.para1 {
+    width: 80%;
+}
+#présentation {
+    background-color: #F8F6D6;
+    padding: 0;
+    padding-bottom: 410px;
+}
+#formation {
+    background-color: #9CC19E;
+    width: 97%;
+    height: 811px;
+    position: relative;
+    border-radius: 0px 0px 71.5px 71.5px;
+    display: flex;
+    top: -232px;
+    z-index: 2;
+    align-items: center;
+}
+#formation h3 {
+    color: white;
+    font-size: 56px;
+    font-weight: bold;
+}
+.barre {
+    width: 65%;
+    height: 27px;
+    background-color: #F8F6D6;
+    border-radius: 13.5px;
+    position: absolute;
+    right: -16px;
+}
+.para2 {
+    margin-left: 114px;
+    width: 70%;
+}
+.para2 p {
+    font-size: 21px;
+    margin-top: 40px;
+}
+.texte1 {
+    margin-left: 100px;
+    width: 40%;
+    margin-bottom: 100px;
+}
+#formation img {
+    margin-top: 80px;
+    z-index: 5;
+}
+#formation .text-white {
+    width: 65%;
+}
+.bordure-red {
+    border-left: 10px solid #DC6F59;
+    border-bottom: 10px solid #DC6F59;
+    position: absolute;
+    width: 1844px;
+    height: 1700px;
+    
+}
+.offre {
+    width: 22%;
+    height: 75%;
+    background: linear-gradient(180deg, #DC6F59 0%, #9CC19E 100%);
+    position: absolute;
+    box-shadow: inset 10px -10px 4px #426063;
+    border-radius: 57px;
+    text-align: center;  
+}
+.offre h4 {
+    color: white;
+    font-family: 'Jacques François';
+    font-size: 40px;
+    margin: 92px 0 63px 0;
+    
+}
+.offre p {
+    color: white;
+    font-size: 21px;
+    text-align: justify;
+    padding: 15px;
+}
+.offre.o1 {
+    top: 756px;
+    left: 111px;
+}
+.offre.o2 {
+    top: 623px;
+    left: 38%;
+}
+.offre.o3 {
+    top: 756px;
+    right: 111px;
+}
+.offre img {
+    margin: 10px!important;
+}
+
+/* international*/
+
+#international {
+    background-color: #4A816A;
+    display: flex;
+}
+.visage {
+    width: 42%;
+}
+.visage img {
+    width: 100%;
+}
+.visage-para {
+    width: 58%;
+}
+.visage-para img {
+    width: 95%;
+}
+.para-international h4 {
+    font-size: 34px;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 40px;
+}
+.para-international p {
+    padding-left: 20px;
+    color: white;
+    text-align: justify;
+    font-size: 20px;
+}
+.para-international {
+    width: 80%;
+    margin-top: 80px;
+}
+.conteneur {
+    max-width: 1903px;
+    margin:auto;
+}
+
+/*Vie étudiante */
+
+#vie-etudiante {
+    background: #F8F6D6;
+    padding-bottom: 100px;
+}
+.cbc {
+    background: #DA8672;
+    color: white;
+    position: absolute;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 32px;
+    z-index: 4;
+    top: -30px;
+    left: -135px;
+}
+.cbc img {
+    width: 276px;
+    height: 300px;
+    border-radius: 29px;
+    padding: 0px 20px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.cbc p {
+    font-size: 20px;
+    margin: 50px 100px;
+}
+.carre-vert > img {
+    width: 28%;
+    position: absolute;
+    z-index: 4;
+    top: -60px;
+    right: 98px;
+}
+.carre-vert{
+    position: relative;
+    background: #D2E9A1;
+    width: 80%;
+    height: 935px;
+    z-index: 2;
+    top: 42px;
+    right: -255px;
+    border-radius: 0px 70px 70px 70px;
+}
+.application {
+    position: absolute;
+    top: 516px;
+    width: 50%;
+}
+.images-cbc {
+    padding-bottom: 20px;
+}
+.application h4 {
+    font-weight: bold;
+    font-size: 60px;
+    text-align: right;
+}
+.para-appli p {
+    font-size: 20px;
+    background: #93C2AF;
+    border-radius: 32px;
+    padding: 20px 25px;
+}
+.para-appli {
+    position: absolute;
+    width: 50%;
+    top: 680px;
+    left: -80px;
+}
+#vie-etudiante h3 {
+    font-weight: bold;
+    padding-left: 120px;
+    padding-top: 50px;
+    font-size: 60px;
+}
+
+/*alumni*/
+
+.alumni-para {
+    width: 60% ;
+    margin:auto;
+}
+.alumni {
+    background: #F8F6D6;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.position {
+    position: relative;
+}
+.alumni-para h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px; 
+    margin-bottom: 30px;   
+}
+.alumni-para p {
+    font-size: 20px;
+    text-align: justify;
+}
+.position img {
+    width: 520px;
+    height: 520px;
+    border-radius: 300px;
+    object-fit: cover;
+    border: 15px solid #93C2AF;
+    padding: 20px;
+}
+.flex-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.i2 {
+    margin-top: 198px;
+    margin-right: -35px;
+    margin-left: -35px;
+}
+.prenom {
+    background: #93C2AF;
+    border-radius: 21px;
+    padding: 15px 109px;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.prenom p {
+    margin-bottom: 0px;
+    font-size: 35px;
+    color: white;
+}
+.prenom1 {
+    top: 739px;
+    left: 245px;
+}
+.prenom2 {
+    white-space: nowrap;
+    top: 936px;
+    left: 843px;
+}
+.prenom3 {
+    top: 739px;
+    right: 245px;
+}
+
+/*footer*/
+
+footer {
+    background: #85B09F;
+
+}
+.footer-form {
+    display: flex;
+}
+.contact {
+    width: 50%;
+
+}
+.contact h5 {
+    font-weight: bold;
+    font-size: 60px;
+    margin: 50px;
+}
+.adresse {
+    background: #F8F6D6;
+    border-radius: 0px 31px 31px 31px;
+    font-size: 21px;
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+.adresse :first-child {
+    font-weight: bold;
+}
+.adresse span img {
+    padding: 10px 20px; 
+    width: 11%;
+}
+.adresse p {
+    padding: 15px 0px;
+}
+.para-precis {
+    margin-left: 85px;
+}
+.local {
+    position: absolute;
+    width: 6%;
+    top: 133px;
+    left: 16px;
+}
+.adresse-precise {
+    margin-bottom: 0;
+}
+.adresse-exact {
+    font-size: 25px;
+    font-weight: normal!important;
+}
+.formulaire {
+    background: #F8F6D6;
+    border-radius: 0px 31px 31px 31px;
+    font-size: 21px;
+    width: 80%;
+    margin: auto;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+
+}
+.formulaire-area {
+    border-radius: 91px 0px 0px 0px;
+    background-color: #DA8672;
+    width: 50%;
+}
+.formulaire-area h5 {
+    font-weight: bold;
+    font-size: 60px;
+    margin: 50px;
+}
+.formulaire input {
+    margin-left: 50px;
+    border: none;
+    background-color:#F8F6D6;
+    outline: none;
+    padding-top: 30px;
+    border-radius: 0px 31px 0px 0px;
+}
+.formulaire button {
+    color: white;
+    background: #85B09F;
+    padding: 5px 24px;
+    border-radius: 6px;
+    border: none;
+    width: 15%;
+    display: flex;
+    align-self: flex-end;
+    margin: 30px 50px;
+}
+.trait-input {
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    background-color: #85B09F;
+    top: 60px;
+    left: 31px;
+}
+.trait-input2 {
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    background-color: #85B09F;
+    top: 121px;
+    left: 31px;
+}
+.reseaux {
+    display: flex;
+    justify-content: right;
+    margin: 20px;
+}
+.reseaux img {
+    padding-right: 20px; 
+}
+.reseaux p {
+    font-size: 20px;
+    font-weight: bold;
+    align-self: center;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+.footer-bas {
+    background: #4A816A;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-bas h6 {
+    color: white;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-bottom: 35px;
+}
