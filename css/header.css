@@ -117,12 +117,18 @@ nav ul {
 nav a:hover, nav svg:hover, nav img:hover {
     opacity: 0.6;
 }
+.menu-person {
+    width: 47px;
+}
 
 
 /*formation*/
 
 .row {
     margin-right: 0!important;
+}
+nav svg {
+    margin-bottom: -10px;
 }
 
 .block-présentation {
