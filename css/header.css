@@ -121,6 +121,10 @@ nav a:hover, nav svg:hover, nav img:hover {
 
 /*formation*/
 
+.row {
+    margin-right: 0!important;
+}
+
 .block-présentation {
     width: 80%;
     height: 811px;
